@@ -1,0 +1,14 @@
+snowflake-db:
+  target:dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ta14976.eu-central-1
+      user: dbt_dev
+      password: B@st1m3ntsS3id0r
+      role: dbt_role
+      warehouse:dbt_wh
+      database: analytics_db
+      schema: transformations
+      threads: 4
+      client_session_keep_alive: False
